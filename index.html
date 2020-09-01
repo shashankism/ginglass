@@ -1,0 +1,32 @@
+<head>
+<script>
+function calculateResult (form) {
+	var lengthvar = form.length.value;
+	var breadthvar = form.breadth.value;
+//	alert (lengthvar * breadthvar);
+	document.getElementById("finalResult").innerHTML = "Answer : " + lengthvar * breadthvar;
+}
+
+function cancelResult (form) {
+		document.getElementById("finalResult").innerHTML ="";
+}
+</script>
+
+</head>
+<body>
+
+<form>
+  <label for="length">Length:</label><br>
+  <input type="number" id="length" name="length" value="1"><br>
+  <label for="breadth">Breadth:</label><br>
+  <input type="number" id="breadth" name="breadth" value="1">
+  <input type="button" name="finalResult" value="Calculate" onClick="calculateResult(this.form)">
+  <input type="button" name="Cancel" value="Cancel" onClick="cancelResult(this.form)">
+</form>
+
+<p id="finalResult"></p>
+
+
+
+
+</body></html>
