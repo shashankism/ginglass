@@ -1,34 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<script>
-function calculateResult (form) {
-	var lengthvar = form.length.value;
-	var breadthvar = form.breadth.value;
-//	alert (lengthvar * breadthvar);
-	document.getElementById("finalResult").innerHTML = "Area : " + lengthvar * breadthvar;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2PKHR6HYJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-function cancelResult (form) {
-		document.getElementById("finalResult").innerHTML ="";
-}
-</script>
-
+    gtag('config', 'G-E2PKHR6HYJ');
+  </script>
+  <title>Quotlly</title>
+  <link rel="icon" href="quotlly-favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style-main.css">
+  <link rel="stylesheet" href="css/style-card.css">
 </head>
+
 <body>
 
-<form>
-  <label for="length">Length:</label><br>
-  <input type="number" id="length" name="length" value="1"><br>
-  <label for="breadth">Breadth:</label><br>
-  <input type="number" id="breadth" name="breadth" value="1">
-  <input type="button" name="finalResult" value="Calculate" onClick="calculateResult(this.form)">
-  <input type="button" name="Cancel" value="Cancel" onClick="cancelResult(this.form)">
-</form>
+  <header >
+  <a href="index.html"><img src="images/quotlly-logo.png" height="50px"></img></a>
+	</header>
 
-<p id="finalResult"></p>
+  <main>
+    <h2>One-Stop Destination for Recommended Books</h2>
+  </main>
 
+  <div class="container">
+    <div class="grid">
+	  <a href="books/upsc.html">
+      <div class="card">
+	    
+        <h3>UPSC</h3>
+		<p>All India Services and the Central Civil Services</p>
+      </div></a>
+	  
+	  <a href="iit-jee.html">
+      <div class="card">
+	    
+        <h3>IIT-JEE</h3> 
+        <p>Engineering entrance for admission IITs</p>		
+      </div></a>
+<!--	  
+	   <a href="aieee.html">
+	   <div class="card">
+	    <p></p>
+        <h3>AIEEE</h3>
+      </div></a>
+	  
+	  <a href="neet.html">
+	  <div class="card">
+	    <p></p>
+        <h3>NEET</h3>    
+      </div></a>
+	  
+	  <a href="cat.html">
+	  <div class="card">
+	    <p></p>
+        <h3>CAT</h3>    
+      </div></a>
+	  
+	  <a href="gmat.html">
+	  <div class="card">
+	    <p></p>
+        <h3>GMAT</h3>      
+      </div></a>
+	  
+	  <a href="gre.html">
+	  <div class="card">
+	    <p></p>
+        <h3>GRE</h3>        
+      </div></a>
+	  
+	  <a href="gate.html">
+	  <div class="card">
+	    <p></p>
+        <h3>GATE</h3>        
+      </div></a>
+	  
+	  <a href="state-pcs.html">
+	  <div class="card">
+	    <p></p>	    
+        <h3>STATE PCS</h3>
+      </div></a>
+	  
+	  <a href="banking.html">
+	  <div class="card">
+	    <p></p>
+        <h3>BANKING</h3>
+      </div></a>
+	  
+	  <a href="railway.html">
+      <div class="card">
+	    <p></p>
+        <h3>RAILWAY</h3>
+      </div></a>
+	  
+	  <a href="defence.html">
+      <div class="card">
+	    <p></p>
+        <h3>DEFENCE</h3>       
+      </div></a>
+-->      
+    </div>
+  </div>
 
+  <footer>
+    &copy; 2025 Quotlly. All rights reserved.
+  </footer>
 
-	
-	
-
-</body></html>
+</body>
+</html>
